@@ -4,8 +4,7 @@ import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 
 // 3. API ka base URL. Isse change karna aasaan hoga
-const API_URL = 'http://localhost:5000/todos/';
-
+const API_URL = 'https://my-todo-api.onrender.com/todos/';
 // 4. Apna main component (App) banao
 function App() {
   // 5. State (memory) banao.
