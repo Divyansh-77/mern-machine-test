@@ -11,13 +11,14 @@ const app = express();
 // 4. Port set karo. process.env.PORT Render/Heroku dega, 5000 local par chalega
 const port = process.env.PORT || 5000;
 
-// 5. "Bouncer" (CORS) ko use karo. Yeh har request ke liye "OK" bolega
+// 5. "Bouncer" (CORS) ko use karo.
 app.use(cors({
   origin: [
-    'http://localhost:3000', // Aapke local testing ke liye
-    'https://mern-machine-test-five.vercel.app' // Aapka live Vercel app
+    'http://localhost:3000', // For local testing
+    'https://mern-machine-test-five.vercel.app'  // Your live Vercel app
   ]
 }));
+
 // 6. "Waiter" (Express) ko bolo ki order JSON format mein lena hai
 app.use(express.json());
 
