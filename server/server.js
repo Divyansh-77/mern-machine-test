@@ -12,7 +12,12 @@ const app = express();
 const port = process.env.PORT || 5000;
 
 // 5. "Bouncer" (CORS) ko use karo. Yeh har request ke liye "OK" bolega
-app.use(cors());
+app.use(cors({
+  origin: [
+    'http://localhost:3000', // Aapke local testing ke liye
+    'https://mern-machine-test-five.vercel.app' // Aapka live Vercel app
+  ]
+}));
 // 6. "Waiter" (Express) ko bolo ki order JSON format mein lena hai
 app.use(express.json());
 
