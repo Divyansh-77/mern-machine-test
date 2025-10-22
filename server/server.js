@@ -4,7 +4,9 @@ const cors = require('cors');
 const mongoose = require('mongoose');
 
 // 2. dotenv ko setup karo taaki woh .env file ko padh sake
-require('dotenv').config();
+if (process.env.NODE_ENV !== 'production') {
+  require('dotenv').config();
+}
 
 // 3. Apna "restaurant" (Express app) create karo
 const app = express();
