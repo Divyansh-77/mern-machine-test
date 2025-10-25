@@ -41,13 +41,13 @@ This application uses a decoupled, service-oriented architecture:
 
 This screenshot shows the live React application, deployed on Vercel, successfully fetching data from the live backend API.
 
-![Vercel Deployment](./assets/vercel-app.png)
+![Vercel Deployment](https://drive.google.com/file/d/1yeQIgug-m1RmMyHrYiboIH8wBtXmcve-/view?usp=drive_link)
 
 ### Backend API Testing (Postman)
 
 This screenshot shows successful Postman tests against the live, deployed backend API on Render.com, confirming the `GET` and `POST` endpoints were working correctly.
 
-![Postman Test](./assets/postman-test.png)
+![Postman Test]()
 
 ## ⚙️ How to Run Locally
 
